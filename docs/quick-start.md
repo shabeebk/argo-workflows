@@ -100,7 +100,7 @@ argo logs -n argo @latest
 * Open a port-forward so you can access the UI:
 
 ```bash
-kubectl -n argo port-forward deployment/argo-server 2746:2746
+kubectl -n argo port-forward services/argo-server 2746:2746
 ```
 
 * Navigate your browser to <https://localhost:2746>.
